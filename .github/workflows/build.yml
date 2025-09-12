@@ -14,6 +14,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Test json        
+        run: |
+          jq . html/arf.json    
+
       - name: Convert Bookmarks
         run: |
           scripts/bookmark_converter.py html/arf.json html/osint-bookmarks.html

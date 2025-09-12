@@ -162,8 +162,13 @@
       },
       {
         "name": "Epieos",
-		    "type": "url",
-		    "url": "https://epieos.com/"
+	      "type": "url",
+	      "url": "https://epieos.com/"
+      }, 
+	  {
+        "name": "SpotThem (R)",
+        "type": "url",
+        "url": "https://spotthem.com/"
       },
 	  {
   		"name": "Minerva OSINT",
