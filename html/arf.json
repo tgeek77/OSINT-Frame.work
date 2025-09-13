@@ -162,9 +162,14 @@
       },
       {
         "name": "Epieos",
-	"type": "url",
-	"url": "https://epieos.com/"
-      }]
+		"type": "url",
+		"url": "https://epieos.com/"
+      },
+	  {
+  		"name": "Minerva OSINT",
+  		"type": "url",
+  		"url": "http://minervaosint.com"
+	  }]
     },
     {
       "name": "Common Email Formats",
