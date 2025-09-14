@@ -162,14 +162,14 @@
       },
       {
         "name": "Epieos",
-	"type": "url",
-	"url": "https://epieos.com/"
-      }, 
+		    "type": "url",
+		    "url": "https://epieos.com/"
+      },
 	  {
-        "name": "SpotThem (R)",
-        "type": "url",
-        "url": "https://spotthem.com/"
-      }]
+  		"name": "Minerva OSINT",
+  		"type": "url",
+  		"url": "http://minervaosint.com"
+	  }]
     },
     {
       "name": "Common Email Formats",
@@ -1051,7 +1051,7 @@
         },
         {
           "name": "Online Nikto scanner",
-          "type": "url",
+          "type": "url"
           "url": "https://nikto.online/"
         }]
       },
