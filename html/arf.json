@@ -162,9 +162,14 @@
       },
       {
         "name": "Epieos",
-	"type": "url",
-	"url": "https://epieos.com/"
-      }]
+		    "type": "url",
+		    "url": "https://epieos.com/"
+      },
+	  {
+  		"name": "Minerva OSINT",
+  		"type": "url",
+  		"url": "http://minervaosint.com"
+	  }]
     },
     {
       "name": "Common Email Formats",
@@ -1554,6 +1559,11 @@
           "type": "url",
           "url": "https://pimeyes.com/en"
         },
+		{
+          "name": "SpotThem Face Search (R)",
+          "type": "url",
+          "url": "https://spotthem.com"
+        }
         {
           "name": "Yandex Images",
           "type": "url",
@@ -2970,6 +2980,11 @@
       "name": "Numspy-Api",
       "type": "url",
       "url": "https://bhattsameer.github.io/numspy/"
+    },
+	{
+        "name": "SpotThem (R)",
+        "type": "url",
+        "url": "https://spotthem.com/"
     }]
   },
   {
@@ -6660,4 +6675,3 @@
     }]
   }]
 }
-
