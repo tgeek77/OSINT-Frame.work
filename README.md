@@ -11,6 +11,7 @@ Today:
 [OSINT Frame.work](https://osintframe.work) is a new fork of OSINT Framework with the same goal of finding and providing access to OSINT tools with some new functionality and management team to help keep it up to date. This site has no cookies and no tracking. It has no advertisements and the only stored data is standard web server logs. It also does not block Tor Browser users at all, though many of the resources found here will.
 
 ### Changelog
+* September 14th, 2025 -- Merged the first community PRs! Thanks folks! Also, there is a slightly new look. The entire framework is not alphabetized for easier browsing including the bookmarks file.
 * September 10th, 2025  -- Updates page added. This is a html mirror of the Github README.md with more information.
 * September 9th, 2025  -- advertisements went out on Reddit and LinkedIn. readme.md is updated and the ci/cd is simplified
 * September 8th, 2025  -- osintframe.work went live
