@@ -1051,7 +1051,7 @@
         },
         {
           "name": "Online Nikto scanner",
-          "type": "url"
+          "type": "url",
           "url": "https://nikto.online/"
         }]
       },
