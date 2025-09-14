@@ -18,6 +18,10 @@ jobs:
         run: |
           jq . html/arf.json    
 
+      - name: Sort Bookmarks by name
+        run: |
+          scripts/sort.py && mv -v html/arf-temp.json html/arf.json
+
       - name: Convert Bookmarks
         run: |
           scripts/bookmark_converter.py html/arf.json html/osint-bookmarks.html
