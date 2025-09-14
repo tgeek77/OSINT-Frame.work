@@ -20,7 +20,7 @@ jobs:
 
       - name: Sort Bookmarks by name
         run: |
-          scripts/sort.py
+          scripts/sort.py && mv -v html/arf-temp.json html/arf.json
 
       - name: Convert Bookmarks
         run: |
