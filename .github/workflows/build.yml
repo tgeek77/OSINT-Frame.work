@@ -14,6 +14,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Test json        
+        run: |
+          jq . html/arf.json    
+
       - name: Convert Bookmarks
         run: |
           scripts/bookmark_converter.py html/arf.json html/osint-bookmarks.html
@@ -30,4 +34,8 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.CI_REGISTRY_USER }}/neo.osint_framework:latest
+          docker push ${{ secrets.CI_REGISTRY_USER }}/neo.osint_framework:latestUpdate arf.json - Added SpotThem OSINT
+
+Hi there, updated our reverse email, phone and face search engine - spotthem.com
+
+Signed-off-by: spotthem <contact@spotthem.com>
