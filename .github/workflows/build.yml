@@ -34,4 +34,4 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.CI_REGISTRY_USER }}/neo.osint_framework:latestUpdate arf.json - Added SpotThem OSINT
+          docker push ${{ secrets.CI_REGISTRY_USER }}/neo.osint_framework:latest
