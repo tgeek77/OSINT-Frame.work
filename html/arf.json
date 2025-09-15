@@ -130,11 +130,6 @@
               "url": "http://commoncrawl.org/"
             },
             {
-              "name": "Common Crawl",
-              "type": "url",
-              "url": "http://commoncrawl.org/"
-            },
-            {
               "name": "Internet Archive: Wayback Machine",
               "type": "url",
               "url": "https://archive.org/web/"
@@ -534,7 +529,7 @@
               "url": "https://freenetproject.org/pages/download.html"
             },
             {
-              "name": "I2P Anonymous Network (T)",
+              "name": "I2p Anonymous Network (T)",
               "type": "url",
               "url": "https://geti2p.net/en/"
             },
@@ -613,7 +608,7 @@
           "url": "https://iaca-darkweb-tools.com/"
         },
         {
-          "name": "TOR Directories",
+          "name": "Tor Directories",
           "type": "folder",
           "children": [
             {
@@ -629,7 +624,7 @@
           ]
         },
         {
-          "name": "TOR Search",
+          "name": "Tor Search",
           "type": "folder",
           "children": [
             {
@@ -880,32 +875,6 @@
       "name": "Documentation / Evidence Capture",
       "type": "folder",
       "children": [
-        {
-          "name": "Map Locations",
-          "type": "folder",
-          "children": [
-            {
-              "name": "BatchGeo",
-              "type": "url",
-              "url": "https://batchgeo.com/"
-            },
-            {
-              "name": "Google Street View - Hyperlapse",
-              "type": "url",
-              "url": "https://github.com/TeehanLax/Hyperlapse.js"
-            },
-            {
-              "name": "Teehan+Lax Labs - Hyperlapse",
-              "type": "url",
-              "url": "http://labs.teehanlax.com/project/hyperlapse"
-            },
-            {
-              "name": "ZeeMaps",
-              "type": "url",
-              "url": "https://www.zeemaps.com/"
-            }
-          ]
-        },
         {
           "name": "Screen Capture",
           "type": "folder",
@@ -1238,11 +1207,6 @@
               "url": "http://analyzeid.com/"
             },
             {
-              "name": "Daily DNS Changes",
-              "type": "url",
-              "url": "http://www.dailychanges.com/"
-            },
-            {
               "name": "Kraken",
               "type": "url",
               "url": "https://github.com/Sw4mpf0x/Kraken"
@@ -1251,16 +1215,6 @@
               "name": "Netlas.io",
               "type": "url",
               "url": "https://app.netlas.io/"
-            },
-            {
-              "name": "ODIN (R)",
-              "type": "url",
-              "url": "https://www.getodin.com/"
-            },
-            {
-              "name": "Online Nikto scanner",
-              "type": "url",
-              "url": "https://nikto.online/"
             },
             {
               "name": "Redirect Detective",
@@ -3562,19 +3516,9 @@
               "url": "http://www.cidr-report.org/as2.0/"
             },
             {
-              "name": "ODIN (R)",
-              "type": "url",
-              "url": "https://www.getodin.com/"
-            },
-            {
               "name": "Onyphe",
               "type": "url",
               "url": "https://www.onyphe.io/"
-            },
-            {
-              "name": "Port scanner Online",
-              "type": "url",
-              "url": "https://portscanner.online/"
             },
             {
               "name": "Reverse.report",
@@ -4342,19 +4286,9 @@
               ]
             },
             {
-              "name": "TOR",
+              "name": "Tor",
               "type": "folder",
               "children": [
-                {
-                  "name": "Freenet Project (T)",
-                  "type": "url",
-                  "url": "https://freenetproject.org/pages/download.html"
-                },
-                {
-                  "name": "I2P Anonymous Network (T)",
-                  "type": "url",
-                  "url": "https://geti2p.net/en/"
-                },
                 {
                   "name": "Tor Download (T)",
                   "type": "url",
@@ -6866,11 +6800,6 @@
               "name": "UserSearch.org",
               "type": "url",
               "url": "https://usersearch.org/"
-            },
-            {
-              "name": "WhatsMyName",
-              "type": "url",
-              "url": "https://whatsmyname.app/"
             },
             {
               "name": "WhatsMyName",
