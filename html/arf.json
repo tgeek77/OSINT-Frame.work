@@ -130,6 +130,11 @@
               "url": "http://commoncrawl.org/"
             },
             {
+              "name": "Forensic OSINT Full Page Screen Capture",
+              "type": "url",
+              "url": "https://chromewebstore.google.com/detail/forensic-osint-full-page/jojaomahhndmeienhjihojidkddkahcn"
+            },
+            {
               "name": "Internet Archive: Wayback Machine",
               "type": "url",
               "url": "https://archive.org/web/"
