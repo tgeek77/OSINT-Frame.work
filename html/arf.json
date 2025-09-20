@@ -6492,9 +6492,14 @@
           ]
         },
         {
-          "name": "Virtual Machines",
+          "name": "Virtual Machines and Linux Distros",
           "type": "folder",
           "children": [
+            {
+              "name": "CSI Linux",
+              "type": "url",
+              "url": "https://www.csilinux.com/"
+            },
             {
               "name": "Kali Linux OS (T)",
               "type": "url",
@@ -6519,6 +6524,16 @@
               "name": "Tails Live OS (T)",
               "type": "url",
               "url": "https://tails.boum.org/"
+            },
+            {
+              "name": "Trace Labs OSINT VM",
+              "type": "url",
+              "url": "https://www.tracelabs.org/initiatives/osint-vm"
+            },
+            {
+              "name": "TSURUGI Linux",
+              "type": "url",
+              "url": "https://tsurugi-linux.org/"
             },
             {
               "name": "VirtualBox (T)",
@@ -6852,6 +6867,22 @@
               "url": "https://github.com/WebBreacher/WhatsMyName"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Volunteering and CTF",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Night Owl Reconnaissance",
+          "type": "url",
+          "url": "https://nightowlrecon.org/"
+        },
+        {
+          "name": "Trace Labs",
+          "type": "url",
+          "url": "https://www.tracelabs.org/"
         }
       ]
     }
