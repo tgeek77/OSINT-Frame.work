@@ -20,7 +20,7 @@ def sort_children(node):
 
 # --- Example usage ---
 # Load JSON from a file
-with open("..html/arf.json", "r", encoding="utf-8") as f:
+with open("html/arf.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Sort the structure
