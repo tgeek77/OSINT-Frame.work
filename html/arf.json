@@ -289,9 +289,19 @@
               "url": "http://www.europages.co.uk/"
             },
             {
+              "name": "Ezilon",
+              "type": "url",
+              "url": "https://www.ezilon.com/"
+            },
+            {
               "name": "Glassdoor Company Reviews",
               "type": "url",
               "url": "https://www.glassdoor.com/Reviews/index.htm"
+            },
+            {
+              "name": "GuideStar Non-Profit Search",
+              "type": "url",
+              "url": "https://www.guidestar.org/"
             },
             {
               "name": "Hoovers",
@@ -307,6 +317,11 @@
               "name": "Kompass International",
               "type": "url",
               "url": "http://www.kompass.com/selectcountry/"
+            },
+            {
+              "name": "Kurzy Czech Business Search",
+              "type": "url",
+              "url": "https://rejstrik-firem.kurzy.cz/hledej-dph"
             },
             {
               "name": "LittleSis",
@@ -331,12 +346,17 @@
             {
               "name": "Owler (R)",
               "type": "url",
-              "url": "https://www.owler.com/"
+              "url": "https://www.owler.com/owler-community/"
             },
             {
               "name": "Plonked",
               "type": "url",
               "url": "https://www.plonked.com/"
+            },
+            {
+              "name": "Scoot UK Businesses",
+              "type": "url",
+              "url": "https://www.scoot.co.uk/"
             },
             {
               "name": "UK Companies list",
