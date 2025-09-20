@@ -1853,6 +1853,11 @@
               "url": "https://ashley.cynic.al/"
             },
             {
+              "name": "Breach Directory",
+              "type": "url",
+              "url": "https://breachdirectory.org/"
+            },
+            {
               "name": "DeHashed (R)",
               "type": "url",
               "url": "https://dehashed.com/"
@@ -1866,6 +1871,11 @@
               "name": "Hudson Rock",
               "type": "url",
               "url": "https://www.hudsonrock.com/threat-intelligence-cybercrime-tools"
+            },
+            {
+              "name": "leakpeak",
+              "type": "url",
+              "url": "https://leakpeek.com/"
             },
             {
               "name": "Vigilante.pw",
