@@ -289,9 +289,19 @@
               "url": "http://www.europages.co.uk/"
             },
             {
+              "name": "Ezilon",
+              "type": "url",
+              "url": "https://www.ezilon.com/"
+            },
+            {
               "name": "Glassdoor Company Reviews",
               "type": "url",
               "url": "https://www.glassdoor.com/Reviews/index.htm"
+            },
+            {
+              "name": "GuideStar Non-Profit Search",
+              "type": "url",
+              "url": "https://www.guidestar.org/"
             },
             {
               "name": "Hoovers",
@@ -307,6 +317,11 @@
               "name": "Kompass International",
               "type": "url",
               "url": "http://www.kompass.com/selectcountry/"
+            },
+            {
+              "name": "Kurzy Czech Business Search",
+              "type": "url",
+              "url": "https://rejstrik-firem.kurzy.cz/hledej-dph"
             },
             {
               "name": "LittleSis",
@@ -331,12 +346,17 @@
             {
               "name": "Owler (R)",
               "type": "url",
-              "url": "https://www.owler.com/"
+              "url": "https://www.owler.com/owler-community/"
             },
             {
               "name": "Plonked",
               "type": "url",
               "url": "https://www.plonked.com/"
+            },
+            {
+              "name": "Scoot UK Businesses",
+              "type": "url",
+              "url": "https://www.scoot.co.uk/"
             },
             {
               "name": "UK Companies list",
@@ -1853,6 +1873,11 @@
               "url": "https://ashley.cynic.al/"
             },
             {
+              "name": "Breach Directory",
+              "type": "url",
+              "url": "https://breachdirectory.org/"
+            },
+            {
               "name": "DeHashed (R)",
               "type": "url",
               "url": "https://dehashed.com/"
@@ -1866,6 +1891,11 @@
               "name": "Hudson Rock",
               "type": "url",
               "url": "https://www.hudsonrock.com/threat-intelligence-cybercrime-tools"
+            },
+            {
+              "name": "leakpeak",
+              "type": "url",
+              "url": "https://leakpeek.com/"
             },
             {
               "name": "Vigilante.pw",
@@ -6749,6 +6779,11 @@
               "name": "MIT PGP Key Server",
               "type": "url",
               "url": "http://pgp.mit.edu/"
+            },
+            {
+              "name": "Room 101 Reddit Username (R)",
+              "type": "url",
+              "url": "https://r00m101.com/"
             },
             {
               "name": "Tinder Usernames (M)",
