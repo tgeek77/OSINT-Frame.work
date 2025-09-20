@@ -6854,6 +6854,22 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Volunteering and CTF",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Night Owl Reconnaissance",
+          "type": "url",
+          "url": "https://nightowlrecon.org/"
+        },
+        {
+          "name": "Trace Labs",
+          "type": "url",
+          "url": "https://www.tracelabs.org/"
+        }
+      ]
     }
   ]
 }
