@@ -20,14 +20,14 @@ def sort_children(node):
 
 # --- Example usage ---
 # Load JSON from a file
-with open("../html/arf.json", "r", encoding="utf-8") as f:
+with open("..html/arf.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Sort the structure
 sorted_data = sort_children(data)
 
 # Save alphabetized JSON
-with open("../html/arf.json", "w", encoding="utf-8") as f:
+with open("html/arf-temp.json", "w", encoding="utf-8") as f:
     json.dump(sorted_data, f, indent=2, ensure_ascii=False)
 
 print("✅ JSON has been alphabetized and saved to html/arf-temp.json")
