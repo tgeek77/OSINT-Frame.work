@@ -6751,6 +6751,11 @@
               "url": "http://pgp.mit.edu/"
             },
             {
+              "name": "Room 101 Reddit Username (R)",
+              "type": "url",
+              "url": "https://r00m101.com/"
+            },
+            {
               "name": "Tinder Usernames (M)",
               "type": "url",
               "url": "https://www.gotinder.com/@%3Cusername%3E"
