@@ -4894,13 +4894,23 @@
       ]
     },
     {
-      "name": "OSINT Reports and Case Studies",
+      "name": "OSINT Case Studies and Reports",
       "type": "folder",
       "children": [
         {
           "name": "Dillards",
           "type": "url",
           "url": "https://github.com/DaneDupont/OSINT-Security-Report/blob/master/OSINT-Report-Dillards.pdf"
+        },
+        {
+          "name": "Identities",
+          "type": "url",
+          "url": "https://c0rsicana.medium.com/osint-report-5-the-airport-broadcast-ddeb93c9b575"
+        },
+        {
+          "name": "Dillards",
+          "type": "url",
+          "url": "https://c0rsicana.medium.com/osint-report-4-identities-a25bca8f921e"
         }
       ]
     },
@@ -7064,6 +7074,11 @@
           "name": "Smart Questions",
           "type": "url",
           "url": "http://www.catb.org/esr/faqs/smart-questions.html"
+        },
+        {
+          "name": "Basel Institute OSINT Course",
+          "type": "url",
+          "url": "https://learn.baselgovernance.org/enrol/index.php?id=79"
         }
       ]
     },
