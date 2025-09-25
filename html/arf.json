@@ -616,7 +616,7 @@
       ]
     },
     {
-      "name": "Dark Web",
+      "name": "Tor/I2P/Etc",
       "type": "folder",
       "children": [
         {
@@ -871,6 +871,11 @@
           "type": "folder",
           "children": [
             {
+              "name": "Bitcoin Explorer",
+              "type": "url",
+              "url": "https://blockchair.com/bitcoin"
+            },
+            {
               "name": "Bitcoin Who's Who",
               "type": "url",
               "url": "http://bitcoinwhoswho.com/"
@@ -884,6 +889,16 @@
               "name": "Block Explorer",
               "type": "url",
               "url": "https://blockexplorer.com/"
+            },
+            {
+              "name": "Block Explorer for Bitcoin, Ethereum, Litecoin and More | BlockCypher",
+              "type": "url",
+              "url": "https://live.blockcypher.com/"
+            },
+            {
+              "name": "Blockchain Explorer - Bitcoin Tracker & More | Blockchain.com",
+              "type": "url",
+              "url": "https://www.blockchain.com/explorer"
             },
             {
               "name": "Blockchain.info",
@@ -904,6 +919,16 @@
               "name": "Blocktrail",
               "type": "url",
               "url": "https://www.blocktrail.com/BTC"
+            },
+            {
+              "name": "Cryptocurrency Alerting - Bitcoin, Crypto & Stock Alerts App",
+              "type": "url",
+              "url": "https://cryptocurrencyalerting.com/"
+            },
+            {
+              "name": "Cryptocurrency search tool - Cryptocurrency investigations - Aware Online Academy",
+              "type": "url",
+              "url": "https://www.aware-online.com/en/osint-tools/cryptocurrency-search-tool/"
             },
             {
               "name": "Graphsense",
@@ -1989,6 +2014,11 @@
               "url": "https://dehashed.com/"
             },
             {
+              "name": "Facebook Data Breach Checker | HaveIBeenZuckered.com",
+              "type": "url",
+              "url": "https://haveibeenzuckered.com/"
+            },
+            {
               "name": "Have I been pwned?",
               "type": "url",
               "url": "https://haveibeenpwned.com/"
@@ -1999,14 +2029,34 @@
               "url": "https://www.hudsonrock.com/threat-intelligence-cybercrime-tools"
             },
             {
+              "name": "Leaked Password | Has your password been leaked?",
+              "type": "url",
+              "url": "https://leakedpassword.com/"
+            },
+            {
               "name": "leakpeak",
               "type": "url",
               "url": "https://leakpeek.com/"
             },
             {
+              "name": "Personal Data Leak Checker: Your Email & Data - Breached? | CyberNews",
+              "type": "url",
+              "url": "https://cybernews.com/personal-data-leak-check/"
+            },
+            {
+              "name": "Snusbase - Database Search Engine",
+              "type": "url",
+              "url": "https://www.snusbase.com/"
+            },
+            {
               "name": "Vigilante.pw",
               "type": "url",
               "url": "https://www.vigilante.pw/"
+            },
+            {
+              "name": "WikiLeaks - Sony Archives",
+              "type": "url",
+              "url": "https://wikileaks.org/sony/emails/"
             }
           ]
         },
@@ -2556,11 +2606,6 @@
           "url": "http://map.daum.net/"
         },
         {
-          "name": "Dominoc925",
-          "type": "url",
-          "url": "https://dominoc925-pages.appspot.com/mapplets/cs_mgrs.html"
-        },
-        {
           "name": "Dual Maps",
           "type": "url",
           "url": "http://data.mashedworld.com/dualmaps/map.htm"
@@ -2976,11 +3021,6 @@
               "name": "What Font Is",
               "type": "url",
               "url": "https://www.whatfontis.com/"
-            },
-            {
-              "name": "What The Font",
-              "type": "url",
-              "url": "https://www.myfonts.com/WhatTheFont/"
             }
           ]
         },
@@ -4383,6 +4423,16 @@
                   "url": "https://www.genymotion.com/"
                 },
                 {
+                  "name": "LDPlayer - Lightweight & Fast Android Emulator for PC",
+                  "type": "url",
+                  "url": "https://www.ldplayer.net/"
+                },
+                {
+                  "name": "MEmu - The Best Android Emulator for PC - Free Download",
+                  "type": "url",
+                  "url": "https://www.memuplay.com/"
+                },
+                {
                   "name": "Nox App Player",
                   "type": "url",
                   "url": "https://www.bignox.com/"
@@ -4511,17 +4561,6 @@
               ]
             },
             {
-              "name": "Tor",
-              "type": "folder",
-              "children": [
-                {
-                  "name": "Tor Download (T)",
-                  "type": "url",
-                  "url": "https://www.torproject.org/download/download-easy.html.en"
-                }
-              ]
-            },
-            {
               "name": "VPN Tests",
               "type": "folder",
               "children": [
@@ -4600,6 +4639,66 @@
           "type": "folder",
           "children": [
             {
+              "name": "ABA/Routing Number Validator - Fake Name Generator",
+              "type": "url",
+              "url": "https://www.fakenamegenerator.com/aba-validator.php"
+            },
+            {
+              "name": "Canadian Social Insurance Number (SIN) - Fake Name Generator",
+              "type": "url",
+              "url": "https://www.fakenamegenerator.com/social-insurance-number.php"
+            },
+            {
+              "name": "Charming house in great location! - Guest suites for Rent",
+              "type": "url",
+              "url": "https://thisrentaldoesnotexist.com/"
+            },
+            {
+              "name": "ChatGPT Famous Resumes - AI Inspired Resume Examples",
+              "type": "url",
+              "url": "https://thisresumedoesnotexist.com/"
+            },
+            {
+              "name": "Credit Card Validator - Fake Name Generator",
+              "type": "url",
+              "url": "https://www.fakenamegenerator.com/credit-card-validator.php"
+            },
+            {
+              "name": "Dating Profile Generator",
+              "type": "url",
+              "url": "https://www.dating-profile-generator.org.uk/"
+            },
+            {
+              "name": "Decoding Social Security Numbers in One Step",
+              "type": "url",
+              "url": "https://stevemorse.org/ssn/ssn.html"
+            },
+            {
+              "name": "Driver's License Generator",
+              "type": "url",
+              "url": "https://mmarvick.github.io/wa-drivers-license/"
+            },
+            {
+              "name": "Encoding and Decoding Driver's License Numbers in One Step",
+              "type": "url",
+              "url": "https://stevemorse.org/dl/dl.html"
+            },
+            {
+              "name": "Fake Company Name Generator",
+              "type": "url",
+              "url": "https://fakeinfo.net/company-name-generator"
+            },
+            {
+              "name": "Fake Drivers License Generator | FakeInfo.Net",
+              "type": "url",
+              "url": "https://fakeinfo.net/drivers-license-generator"
+            },
+            {
+              "name": "Fake Generator Tools | FauxID.com",
+              "type": "url",
+              "url": "https://fauxid.com/tools"
+            },
+            {
               "name": "Fake Identity Generator",
               "type": "url",
               "url": "http://justdelete.me/fake-identity-generator/"
@@ -4610,9 +4709,54 @@
               "url": "http://www.fakenamegenerator.com/"
             },
             {
+              "name": "Fake Twitter Profile Generator",
+              "type": "url",
+              "url": "https://fakeinfo.net/fake-twitter-profile-generator"
+            },
+            {
+              "name": "Fake Youtube Channel Generator",
+              "type": "url",
+              "url": "https://fakeinfo.net/fake-youtube-channel-generator"
+            },
+            {
               "name": "Faker.js",
               "type": "url",
               "url": "https://cdn.rawgit.com/Marak/faker.js/master/examples/browser/index.html"
+            },
+            {
+              "name": "Generate a Random Name - Fake Name Generator",
+              "type": "url",
+              "url": "https://www.fakenamegenerator.com/"
+            },
+            {
+              "name": "Generate SA ID Numbers",
+              "type": "url",
+              "url": "https://chris927.github.io/generate-sa-idnumbers/"
+            },
+            {
+              "name": "GUID/UUID and short GUID generator",
+              "type": "url",
+              "url": "https://richardkundl.github.io/shortguid/"
+            },
+            {
+              "name": "IID Generator by Georgy Bunin",
+              "type": "url",
+              "url": "https://georgybu.github.io/IID_Generator/"
+            },
+            {
+              "name": "Nano ID CC",
+              "type": "url",
+              "url": "https://zelark.github.io/nano-id-cc/"
+            },
+            {
+              "name": "Online Random IMEI Number Generator",
+              "type": "url",
+              "url": "https://dyrk.org/tools/imei/"
+            },
+            {
+              "name": "Page Not Found",
+              "type": "url",
+              "url": "https://fakeinfo.net/fake-tiktok-profile-gererator"
             },
             {
               "name": "Pexels",
@@ -4620,9 +4764,64 @@
               "url": "https://www.pexels.com/"
             },
             {
+              "name": "PIC/CIC Code Database - Allred Tech",
+              "type": "url",
+              "url": "https://www.allredtech.com/"
+            },
+            {
+              "name": "Random Face Generator| FakeInfo.Net",
+              "type": "url",
+              "url": "https://fakeinfo.net/random-face-generator"
+            },
+            {
+              "name": "Random Name Generator - Behind the Name",
+              "type": "url",
+              "url": "https://www.behindthename.com/random/"
+            },
+            {
+              "name": "Random Name Generator | Fake ID Generator USA - Businer",
+              "type": "url",
+              "url": "https://businer.com/fakeid.php"
+            },
+            {
               "name": "Random User Generator",
               "type": "url",
               "url": "https://randomuser.me/"
+            },
+            {
+              "name": "Resume Builder",
+              "type": "url",
+              "url": "https://vinaysomawat.github.io/Resume-Builder/"
+            },
+            {
+              "name": "UK National Insurance Number (NINO) - Fake Name Generator",
+              "type": "url",
+              "url": "https://www.fakenamegenerator.com/national-insurance-number.php"
+            },
+            {
+              "name": "US Social Security Number (SSN) - Fake Name Generator",
+              "type": "url",
+              "url": "https://www.fakenamegenerator.com/social-security-number.php"
+            },
+            {
+              "name": "US SSN / Driver License / State ID / Passport / Tax ID Generator - Businer.com",
+              "type": "url",
+              "url": "https://businer.com/usssndriverlicenseidgen.php"
+            },
+            {
+              "name": "Username Generator - LastPass",
+              "type": "url",
+              "url": "https://www.lastpass.com/features/username-generator"
+            },
+            {
+              "name": "Vehicle Identification Number - Fake Name Generator",
+              "type": "url",
+              "url": "https://www.fakenamegenerator.com/vehicle-identification-number.php"
+            },
+            {
+              "name": "Windows Phone IMEI Generator",
+              "type": "url",
+              "url": "https://wpimeigenerator.github.io/"
             }
           ]
         },
@@ -5924,6 +6123,11 @@
               "url": "https://del.icio.us/"
             },
             {
+              "name": "Hunt Intelligence: OSINT Tools",
+              "type": "url",
+              "url": "https://www.huntintel.io/"
+            },
+            {
               "name": "MiGente (Latino)",
               "type": "url",
               "url": "http://www.migente.com/user_search/index.html"
@@ -5944,6 +6148,41 @@
               "url": "https://orkut.google.com/"
             },
             {
+              "name": "OSINT & SOCMINT Tooling",
+              "type": "url",
+              "url": "https://osint.support/chrome-extensions/2019/09/29/osint-socmint-tooling.html"
+            },
+            {
+              "name": "OSINT Toolkit",
+              "type": "url",
+              "url": "https://one-plus.github.io/Instagram"
+            },
+            {
+              "name": "snscrape · PyPI",
+              "type": "url",
+              "url": "https://pypi.org/project/snscrape/"
+            },
+            {
+              "name": "Social Media Search",
+              "type": "url",
+              "url": "https://www.social-searcher.com/google-social-search/"
+            },
+            {
+              "name": "Social Search Engine",
+              "type": "url",
+              "url": "https://www.socialsearchengine.org/"
+            },
+            {
+              "name": "Source Candidates On Dribbble ~ RecruitEm",
+              "type": "url",
+              "url": "https://recruitin.net/dribbble.php"
+            },
+            {
+              "name": "Source Candidates on XING ~ RecruitEm",
+              "type": "url",
+              "url": "https://recruitin.net/xing.php"
+            },
+            {
               "name": "TheHoodUp (NSFW)",
               "type": "url",
               "url": "http://thehoodup.com/board/"
@@ -5954,9 +6193,24 @@
               "url": "http://www.tumblr.com/tagged/search"
             },
             {
+              "name": "Vimeo search tool",
+              "type": "url",
+              "url": "https://www.aware-online.com/en/osint-tools/vimeo-search-tool/"
+            },
+            {
               "name": "VK",
               "type": "url",
               "url": "https://vk.com/"
+            },
+            {
+              "name": "Who posted what?",
+              "type": "url",
+              "url": "https://whopostedwhat.com/"
+            },
+            {
+              "name": "Крибрум: Поиск по социальным сетям",
+              "type": "url",
+              "url": "https://kribrum.io/"
             }
           ]
         },
