@@ -1,5 +1,11 @@
 ## OSINT Frame.work
 
+It looks like the original OSINT Framework is back and being actively maintained. I will be deprecating my site since there doesn't need to be two sites doing the exact same thing but I hope to continue to provide PRs to the upstream project as I have time. 
+
+I've also put in a permanent forwarder from my domain to the original.
+
+## Old New Below
+
 **New site:** [http://osintframe.work](http://osintframe.work)
 
 ### Notes
