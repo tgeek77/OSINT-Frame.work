@@ -1,0 +1,27 @@
+{
+  "name": "arf",
+  "version": "1.0.0",
+  "description": "Advanced Reconnaissance Framework",
+  "main": "public/index.html",
+  "scripts": {
+    "postinstall": "copyfiles -f ./node_modules/d3/dist/d3.min.js ./public/js/",
+    "start": "cd ./public; python3 -m http.server 8000",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lockfale/OSINT-Framework.git"
+  },
+  "author": "Justin Nordine (s0lray)",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/lockfale/OSINT-Framework/issues"
+  },
+  "homepage": "https://github.com/lockfale/OSINT-Framework#readme",
+  "devDependencies": {
+    "copyfiles": "^1.0.0",
+    "d3": "^7.9.0",
+    "wrangler": "^4.76.0"
+  }
+}

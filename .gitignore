@@ -1,7 +1,17 @@
+# agent / org files #
+######################
+agents/
+.agents/
+
 # vendor packages #
 ######################
 public/js/vendor
 node_modules
+bower_components
+
+# generated artifacts #
+######################
+tools/link_audit_report.json
 
 # OS generated files #
 ######################
@@ -12,4 +22,14 @@ node_modules
 .Trashes
 ehthumbs.db
 Thumbs.db
+<<<<<<< HEAD
 html/url_codes.txt
+=======
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
+>>>>>>> upstream/master

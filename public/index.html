@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- Viewport Settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="css/arf.css"/>
+    <link type="text/css" rel="stylesheet" href="css/panel.css"/>
+    <script type="text/javascript" src="js/d3.min.js"></script>
+    <title>OSINT Framework</title>
+  </head>
+  <noscript>
+    <p>Sorry, Your browser does not support JavaScript! Activate JavaScript on your browser or look for a compatible
+      browser to use the site.</p>
+  </noscript>
+  <body>
+    <!-- Apply light-mode class immediately if stored preference is light -->
+    <script>
+      (function() {
+        if (localStorage.getItem("theme") === "light") {
+          document.body.classList.add("light-mode");
+        }
+      })();
+    </script>
+    <div id="body">
+      <div id="header">
+        <span id="header-title">OSINT Framework</span>
+        <div id="header-actions">
+          <button id="header-notes-btn" onclick="toggleNotesPanel()">Notes</button>
+          <button id="header-theme-toggle" onclick="goDark()">Light Mode</button>
+        </div>
+      </div>
+      <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search tools..." autocomplete="off" aria-label="Search OSINT tools">
+        <div id="search-results" role="listbox" aria-label="Search results"></div>
+      </div>
+    </div>
+
+    <!-- Tool details panel -->
+    <div id="panel-overlay"></div>
+    <div id="tool-panel" role="complementary" aria-label="Tool details">
+      <div id="panel-header">
+        <div id="panel-header-text">
+          <span id="panel-title"></span>
+          <div id="panel-breadcrumb" class="empty"></div>
+        </div>
+        <button id="panel-close" aria-label="Close panel">&#x2715;</button>
+      </div>
+      <div id="panel-body">
+        <div id="panel-cta-section" class="empty">
+          <a id="panel-open-tool" href="#" target="_blank" rel="noopener noreferrer">Open Tool &rarr;</a>
+        </div>
+
+        <hr class="panel-divider">
+
+        <div id="panel-badges" class="empty"></div>
+
+        <div id="panel-description-section" class="empty">
+          <span class="panel-section-label">Description</span>
+          <span id="panel-description"></span>
+        </div>
+
+        <div id="panel-usage-section" class="empty">
+          <span class="panel-section-label">Usage Context</span>
+          <span id="panel-usage"></span>
+        </div>
+
+        <div id="panel-io-section" class="empty">
+          <span class="panel-section-label">Input &rarr; Output</span>
+          <span id="panel-io"></span>
+        </div>
+
+        <hr class="panel-divider">
+
+        <div id="panel-opsec-section" class="empty">
+          <span class="panel-section-label">OPSEC Notes</span>
+          <span id="panel-opsec"></span>
+        </div>
+
+        <div id="panel-rating-section" class="empty">
+          <span class="panel-section-label">Community Rating</span>
+          <div id="panel-rating-row">
+            <div id="star-rating">
+              <button class="star-zero-btn" data-value="0" aria-label="Rate 0 stars" title="0 stars">0</button>
+              <span class="star-pos" data-star="1">
+                <span class="star-icon">&#9733;</span>
+                <button class="star-click star-left" data-value="0.5" aria-label="Rate 0.5 stars"></button>
+                <button class="star-click star-right" data-value="1" aria-label="Rate 1 star"></button>
+              </span>
+              <span class="star-pos" data-star="2">
+                <span class="star-icon">&#9733;</span>
+                <button class="star-click star-left" data-value="1.5" aria-label="Rate 1.5 stars"></button>
+                <button class="star-click star-right" data-value="2" aria-label="Rate 2 stars"></button>
+              </span>
+              <span class="star-pos" data-star="3">
+                <span class="star-icon">&#9733;</span>
+                <button class="star-click star-left" data-value="2.5" aria-label="Rate 2.5 stars"></button>
+                <button class="star-click star-right" data-value="3" aria-label="Rate 3 stars"></button>
+              </span>
+              <span class="star-pos" data-star="4">
+                <span class="star-icon">&#9733;</span>
+                <button class="star-click star-left" data-value="3.5" aria-label="Rate 3.5 stars"></button>
+                <button class="star-click star-right" data-value="4" aria-label="Rate 4 stars"></button>
+              </span>
+              <span class="star-pos" data-star="5">
+                <span class="star-icon">&#9733;</span>
+                <button class="star-click star-left" data-value="4.5" aria-label="Rate 4.5 stars"></button>
+                <button class="star-click star-right" data-value="5" aria-label="Rate 5 stars"></button>
+              </span>
+            </div>
+            <span id="rating-avg">&#8230;</span>
+          </div>
+        </div>
+
+      </div>
+      <div id="panel-footer">
+        <div id="panel-report-section">
+          <span class="panel-section-label">Report an Issue</span>
+          <div id="panel-report-buttons">
+            <button class="report-btn" data-type="dead_link">Dead link</button>
+            <button class="report-btn" data-type="paywalled">Paywalled</button>
+            <button class="report-btn" data-type="incorrect_info">Incorrect info</button>
+          </div>
+          <div id="panel-report-feedback" class="panel-report-feedback hidden"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/arf.js"></script>
+
+    <div class="legend"><p>
+    <span class="badge badge-T">T</span> - Indicates a link to a tool that must be installed and run locally<br>
+    <span class="badge badge-D">D</span> - Google Dork, for more information: <a href="https://en.wikipedia.org/wiki/Google_hacking">Google Hacking</a><br>
+    <span class="badge badge-R">R</span> - Requires registration<br>
+    <span class="badge badge-M">M</span> - Indicates a URL that contains the search term and the URL itself must be edited manually<br>
+    </p>
+    <script>
+      (function() {
+        var isLight = localStorage.getItem("theme") === "light";
+        var btn = document.getElementById("header-theme-toggle");
+        if (btn) btn.textContent = isLight ? "Dark Mode" : "Light Mode";
+      })();
+    </script>
+    </div>
+
+    <div id="notes-content">
+      <h3>Notes</h3>
+      OSINT framework focused on gathering information from free tools or resources.  The intention is to help people find free OSINT resources.  Some of the sites included might require registration or offer more data for $$$, but you should be able to get at least a portion of the available information for no cost.<br>
+
+      <p>I originally created this framework with an information security point of view.  Since then, the response from other fields and disciplines has been incredible.  I would love to be able to include any other OSINT resources, especially from fields outside of infosec.  Please let me know about anything that might be missing!</p>
+
+      <h3>For Update Notifications</h3>
+      Follow me on Twitter: <a href="https://twitter.com/jnordine">@jnordine</a><br>
+      Watch or star the project on Github: <a href="https://github.com/lockfale/osint-framework">https://github.com/lockfale/osint-framework</a>
+
+      <h3>Suggestions, Comments, Feedback</h3>
+      Feedback or new tool suggestions are extremely welcome!  Please feel free to reach out on Twitter or submit an issue on Github.
+    </div>
+
+    <!-- Mobile notes button (visible only on mobile) -->
+    <button id="mobile-notes-btn" onclick="toggleNotesPanel()">Notes</button>
+
+    <!-- Mobile notes overlay panel -->
+    <div id="notes-overlay"></div>
+    <div id="notes-panel">
+      <div id="notes-panel-header">
+        <span id="notes-panel-title">Notes</span>
+        <button id="notes-panel-close" onclick="toggleNotesPanel()" aria-label="Close notes">&#x2715;</button>
+      </div>
+      <div id="notes-panel-body"></div>
+    </div>
+
+  </body>
+
+</html>

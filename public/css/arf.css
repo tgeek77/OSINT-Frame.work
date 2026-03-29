@@ -1,0 +1,450 @@
+/* === Design tokens === */
+:root {
+  /* Colors */
+  --color-bg:               #1a1a1a;
+  --color-surface:          #2d2d2d;
+  --color-text-primary:     #e0e0e0;
+  --color-text-secondary:   #999;
+  --color-node-stroke:      steelblue;
+  --color-node-fill-branch: #3a3a3a;
+  --color-node-fill-leaf:   #1a1a1a;
+  --color-link:             #555;
+  --color-noscript-bg:      #2a1a00;
+  --color-noscript-border:  #7a4a00;
+  --color-legend:           #e0e0e0;
+  --color-header:           #e0e0e0;
+
+  /* Status badge colors — saturated enough for both light and dark backgrounds */
+  --badge-T: #4a9eda;
+  --badge-D: #e8944a;
+  --badge-R: #c8a030;
+  --badge-M: #9a7eda;
+  --color-accent:           #4a9eda;
+  --color-border:           #444;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md:  0 4px 12px rgba(0,0,0,0.5);
+
+  /* Border radius */
+  --radius-sm:  3px;
+  --radius-md:  6px;
+
+  /* Spacing (4px base scale) */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                 'Helvetica Neue', Arial, sans-serif;
+  --font-size-sm:   11px;
+  --font-size-base: 14px;
+  --font-size-lg:   16px;
+  --font-size-xl:   40px;
+}
+
+body.light-mode {
+  --color-bg:               #ffffff;
+  --color-surface:          #f5f5f5;
+  --color-text-primary:     #000000;
+  --color-text-secondary:   #767676;
+  --color-node-stroke:      steelblue;
+  --color-node-fill-branch: lightsteelblue;
+  --color-node-fill-leaf:   #ffffff;
+  --color-link:             #ccc;
+  --color-noscript-bg:      rgb(255, 228, 196);
+  --color-noscript-border:  rgb(255, 204, 153);
+  --color-legend:           #000000;
+  --color-header:           #000000;
+  --color-border:           #ddd;
+  --shadow-sm:              0 1px 3px rgba(0,0,0,0.12);
+  --shadow-md:              0 4px 12px rgba(0,0,0,0.15);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  margin: 0;
+  overflow: hidden;
+}
+
+noscript p {
+  text-align: center;
+  background-color: var(--color-noscript-bg);
+  color: var(--color-text-primary);
+  margin: 0 auto;
+  width: 80vw;
+  padding: 25px 0;
+  margin-top: 80px;
+  border-radius: 10px;
+  border: 1px solid var(--color-noscript-border);
+  margin-bottom: 20px;
+  display: flex-wrap;
+}
+
+#body {
+  margin: 0 auto;
+  position: relative;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  /* Fill remaining viewport height below header + search bar */
+  height: calc(100vh - 120px);
+  cursor: grab;
+}
+
+svg:active {
+  cursor: grabbing;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-header);
+  padding: var(--space-2) var(--space-4);
+}
+
+#header-actions {
+  position: absolute;
+  right: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+#header-actions button {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family);
+  padding: var(--space-1) var(--space-2);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#header-actions button:hover {
+  color: var(--color-text-primary);
+  border-color: var(--color-text-secondary);
+}
+
+.legend {
+  display: none;
+}
+
+#notes-content {
+  display: none;
+}
+
+.legend a {
+  color: var(--color-node-stroke);
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  cursor: pointer;
+  fill: var(--color-node-fill-leaf);
+  stroke: var(--color-node-stroke);
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 12px;
+  fill: var(--color-text-primary);
+}
+
+path.link {
+  fill: none;
+  stroke: var(--color-link);
+  stroke-width: 1px;
+}
+
+h3 {
+  color: var(--color-text-primary);
+}
+
+a {
+  color: var(--color-node-stroke);
+}
+
+/* Status badge pills (used in legend) */
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 1px 4px;
+  border-radius: 3px;
+  color: #fff;
+  vertical-align: middle;
+}
+.badge-T { background-color: var(--badge-T); }
+.badge-D { background-color: var(--badge-D); }
+.badge-R { background-color: var(--badge-R); }
+.badge-M { background-color: var(--badge-M); }
+/* Search */
+#search-container {
+  text-align: center;
+  padding: var(--space-2) 0 var(--space-1);
+}
+
+#search-input {
+  width: 400px;
+  max-width: 90vw;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-link);
+  border-radius: var(--radius-sm);
+  outline: none;
+}
+
+#search-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(74, 158, 218, 0.25);
+}
+
+#search-results {
+  margin: var(--space-2) auto 0;
+  width: 600px;
+  max-width: 90vw;
+  text-align: left;
+  background: var(--color-surface);
+  border: 1px solid var(--color-link);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  max-height: 400px;
+  overflow-y: auto;
+  display: none;
+}
+
+#search-results.visible {
+  display: block;
+}
+
+.search-result-item {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--color-link);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover {
+  background: var(--color-bg);
+}
+
+.search-result-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-result-name {
+  font-weight: bold;
+  color: var(--color-node-stroke);
+}
+
+.search-result-ext {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.search-result-ext:hover {
+  color: var(--color-node-stroke);
+  text-decoration: none;
+}
+
+.search-result-path {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  margin-top: 2px;
+}
+
+.search-no-results {
+  padding: var(--space-3);
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+/* Mobile floating notes button (hidden on desktop; header button used instead) */
+#mobile-notes-btn {
+  display: none;
+}
+
+/* Notes overlay */
+#notes-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 299;
+}
+
+#notes-overlay.visible {
+  display: block;
+}
+
+/* Notes panel (desktop: side panel) */
+#notes-panel {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  max-width: 100vw;
+  height: 100vh;
+  background: var(--color-surface);
+  z-index: 300;
+  transform: translateX(100%);
+  transition: transform 250ms ease;
+  will-change: transform;
+  box-shadow: var(--shadow-md);
+}
+
+#notes-panel.open {
+  transform: translateX(0);
+}
+
+#notes-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+#notes-panel-title {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: var(--color-text-primary);
+}
+
+#notes-panel-close {
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px var(--space-1);
+  border-radius: var(--radius-sm);
+}
+
+#notes-panel-close:hover {
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+}
+
+#notes-panel-body {
+  flex: 1;
+  padding: var(--space-4);
+  overflow-y: auto;
+  font-size: var(--font-size-base);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+}
+
+#notes-panel-body a {
+  color: var(--color-node-stroke);
+}
+
+#notes-panel-body h3 {
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+#notes-panel-body h3:first-child {
+  margin-top: 0;
+}
+
+/* === Mobile responsive === */
+@media (max-width: 768px) {
+  #header {
+    font-size: var(--font-size-lg);
+    top: 0;
+    position: relative;
+    padding: var(--space-2) var(--space-3);
+  }
+
+  #header-actions {
+    right: var(--space-3);
+  }
+
+  /* Hide desktop notes button on mobile (floating button used instead) */
+  #header-notes-btn {
+    display: none;
+  }
+
+  #search-container {
+    padding: var(--space-1) 0;
+  }
+
+  #search-input {
+    padding: var(--space-1) var(--space-2);
+    font-size: 13px;
+  }
+
+  /* Maximize SVG tree viewport */
+  svg {
+    height: calc(100vh - 80px);
+  }
+
+  /* Floating notes button (mobile only) */
+  #mobile-notes-btn {
+    display: block;
+    position: fixed;
+    bottom: var(--space-4);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: var(--space-2) var(--space-5);
+    font-size: var(--font-size-base);
+    font-family: var(--font-family);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    z-index: 100;
+  }
+
+  #mobile-notes-btn:hover {
+    background: var(--color-bg);
+  }
+
+  /* Full-width notes panel on mobile */
+  #notes-panel {
+    width: 100vw;
+    box-shadow: none;
+  }
+}
